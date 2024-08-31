@@ -1,6 +1,6 @@
 {
   "name": "playground-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Playgrount toolkit to support portfolio testing application and website",
   "main": "index.js",
   "scripts": {
