@@ -1,0 +1,19 @@
+{
+  "name": "playground-toolkit",
+  "version": "1.0.0",
+  "description": "Playgrount toolkit to support portfolio testing application and website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liccarlostovar/playground-toolkit.git"
+  },
+  "author": "Carlos Tovar <lic.carlos.tovar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liccarlostovar/playground-toolkit/issues"
+  },
+  "homepage": "https://github.com/liccarlostovar/playground-toolkit#readme"
+}
