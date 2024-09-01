@@ -1,10 +1,11 @@
 {
   "name": "playground-toolkit",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Playgrount toolkit to support portfolio testing application and website",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/liccarlostovar/playground-toolkit/issues"
   },
-  "homepage": "https://github.com/liccarlostovar/playground-toolkit#readme"
+  "homepage": "https://github.com/liccarlostovar/playground-toolkit#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "typescript": "^5.5.4"
+  }
 }
