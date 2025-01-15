@@ -12,7 +12,7 @@ export const unique = (arr: any[]) => {
 };
 
 export const toSnakeCase = (str: string) => {
-    return str.replace(/[A-Z]/g, (letter) => `_${letter.toLowerCase()}`);
+    return str.replace(/[A-Z]/g, (letter) => `_${letter.toLowerCase()}`).replace(/^_/, "");
 };
 export const toCamelCase = (str: string) => {
     return str.replace(/_([a-z])/g, (_match, letter) => letter.toUpperCase());
@@ -47,7 +47,8 @@ export const isPalindrome = (str: string) => {
     return str === str.split("").reverse().join("");
 };
 export const getRandomColor = () => {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    let color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    return color;
 };
 
 export const flattenArray = (arr: any[]) => {

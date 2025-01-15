@@ -114,7 +114,7 @@ var unique = (arr) => {
   return Array.from(new Set(arr));
 };
 var toSnakeCase = (str) => {
-  return str.replace(/[A-Z]/g, (letter) => `_${letter.toLowerCase()}`);
+  return str.replace(/[A-Z]/g, (letter) => `_${letter.toLowerCase()}`).replace(/^_/, "");
 };
 var toCamelCase = (str) => {
   return str.replace(/_([a-z])/g, (_match, letter) => letter.toUpperCase());
@@ -147,7 +147,8 @@ var isPalindrome = (str) => {
   return str === str.split("").reverse().join("");
 };
 var getRandomColor = () => {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  let color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return color;
 };
 var flattenArray = (arr) => {
   return arr.flat(Infinity);
