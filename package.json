@@ -1,24 +1,24 @@
 {
-  "name": "@c3th/playground-toolkit",
-  "version": "1.0.7",
-  "description": "Playgrount toolkit to support portfolio testing application and website",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/liccarlostovar/playground-toolkit.git"
-  },
-  "author": "Carlos Tovar <lic.carlos.tovar@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/liccarlostovar/playground-toolkit/issues"
-  },
-  "homepage": "https://github.com/liccarlostovar/playground-toolkit#readme",
-  "devDependencies": {
-    "@types/node": "^22.5.1",
-    "typescript": "^5.5.4"
-  }
+    "name": "@c3th/playground-toolkit",
+    "version": "1.0.10",
+    "description": "Playgrount toolkit to support portfolio testing application and website",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/liccarlostovar/playground-toolkit.git"
+    },
+    "author": "Carlos Tovar <lic.carlos.tovar@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/liccarlostovar/playground-toolkit/issues"
+    },
+    "homepage": "https://github.com/liccarlostovar/playground-toolkit#readme",
+    "devDependencies": {
+        "@types/node": "^22.5.1",
+        "typescript": "^5.5.4"
+    }
 }
