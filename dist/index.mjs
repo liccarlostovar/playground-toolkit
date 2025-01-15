@@ -1,7 +1,4 @@
-"use strict";
 var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __propIsEnum = Object.prototype.propertyIsEnumerable;
@@ -17,19 +14,6 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var __async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
@@ -50,42 +34,6 @@ var __async = (__this, __arguments, generator) => {
     step((generator = generator.apply(__this, __arguments)).next());
   });
 };
-
-// src/index.ts
-var index_exports = {};
-__export(index_exports, {
-  Test: () => Test,
-  arrayToObj: () => arrayToObj,
-  capitalizeWords: () => capitalizeWords,
-  celciusToFahrenheit: () => celciusToFahrenheit,
-  deepClone: () => deepClone,
-  fahrenheitToCelcius: () => fahrenheitToCelcius,
-  flattenArray: () => flattenArray,
-  generateUUID: () => generateUUID,
-  getRandomColor: () => getRandomColor,
-  getRandomNumber: () => getRandomNumber,
-  imagesService: () => imagesService,
-  isEmptyObject: () => isEmptyObject,
-  isEven: () => isEven,
-  isLeapYear: () => isLeapYear,
-  isNegative: () => isNegative,
-  isNumber: () => isNumber,
-  isObject: () => isObject,
-  isOdd: () => isOdd,
-  isPalindrome: () => isPalindrome,
-  isPositive: () => isPositive,
-  isPrime: () => isPrime,
-  isString: () => isString,
-  isZero: () => isZero,
-  sortByKey: () => sortByKey,
-  toCamelCase: () => toCamelCase,
-  toKebabCase: () => toKebabCase,
-  toPascalCase: () => toPascalCase,
-  toSnakeCase: () => toSnakeCase,
-  toTitleCase: () => toTitleCase,
-  unique: () => unique
-});
-module.exports = __toCommonJS(index_exports);
 
 // src/loremPicsum/imagesService.ts
 var defaultConfig = {
@@ -207,8 +155,7 @@ var Test = () => __async(void 0, null, function* () {
   console.log("utils.getRandomColor", getRandomColor());
 });
 Test();
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
+export {
   Test,
   arrayToObj,
   capitalizeWords,
@@ -239,5 +186,5 @@ Test();
   toSnakeCase,
   toTitleCase,
   unique
-});
-//# sourceMappingURL=index.js.map
+};
+//# sourceMappingURL=index.mjs.map
