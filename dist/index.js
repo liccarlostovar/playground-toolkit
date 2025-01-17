@@ -1,7 +1,4 @@
-"use strict";
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});var __defProp = Object.defineProperty;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __propIsEnum = Object.prototype.propertyIsEnumerable;
@@ -17,75 +14,6 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var __async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
-
-// src/index.ts
-var index_exports = {};
-__export(index_exports, {
-  Test: () => Test,
-  arrayToObj: () => arrayToObj,
-  capitalizeWords: () => capitalizeWords,
-  celciusToFahrenheit: () => celciusToFahrenheit,
-  deepClone: () => deepClone,
-  fahrenheitToCelcius: () => fahrenheitToCelcius,
-  flattenArray: () => flattenArray,
-  generateUUID: () => generateUUID,
-  getRandomColor: () => getRandomColor,
-  getRandomNumber: () => getRandomNumber,
-  imagesService: () => imagesService,
-  isEmptyObject: () => isEmptyObject,
-  isEven: () => isEven,
-  isLeapYear: () => isLeapYear,
-  isNegative: () => isNegative,
-  isNumber: () => isNumber,
-  isObject: () => isObject,
-  isOdd: () => isOdd,
-  isPalindrome: () => isPalindrome,
-  isPositive: () => isPositive,
-  isPrime: () => isPrime,
-  isString: () => isString,
-  isZero: () => isZero,
-  sortByKey: () => sortByKey,
-  toCamelCase: () => toCamelCase,
-  toKebabCase: () => toKebabCase,
-  toPascalCase: () => toPascalCase,
-  toSnakeCase: () => toSnakeCase,
-  toTitleCase: () => toTitleCase,
-  unique: () => unique
-});
-module.exports = __toCommonJS(index_exports);
 
 // src/loremPicsum/imagesService.ts
 var defaultConfig = {
@@ -200,45 +128,34 @@ var arrayToObj = (arr, key) => {
   }, {});
 };
 
-// src/index.ts
-console.log("Initialized the library");
-var Test = () => __async(void 0, null, function* () {
-  console.log("Lorem Picsum service configuration", imagesService.config);
-  console.log("utils.getRandomNumber", getRandomNumber(1, 10));
-  console.log("utils.getRandomColor", getRandomColor());
-});
-Test();
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  Test,
-  arrayToObj,
-  capitalizeWords,
-  celciusToFahrenheit,
-  deepClone,
-  fahrenheitToCelcius,
-  flattenArray,
-  generateUUID,
-  getRandomColor,
-  getRandomNumber,
-  imagesService,
-  isEmptyObject,
-  isEven,
-  isLeapYear,
-  isNegative,
-  isNumber,
-  isObject,
-  isOdd,
-  isPalindrome,
-  isPositive,
-  isPrime,
-  isString,
-  isZero,
-  sortByKey,
-  toCamelCase,
-  toKebabCase,
-  toPascalCase,
-  toSnakeCase,
-  toTitleCase,
-  unique
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+exports.arrayToObj = arrayToObj; exports.capitalizeWords = capitalizeWords; exports.celciusToFahrenheit = celciusToFahrenheit; exports.deepClone = deepClone; exports.fahrenheitToCelcius = fahrenheitToCelcius; exports.flattenArray = flattenArray; exports.generateUUID = generateUUID; exports.getRandomColor = getRandomColor; exports.getRandomNumber = getRandomNumber; exports.imagesService = imagesService; exports.isEmptyObject = isEmptyObject; exports.isEven = isEven; exports.isLeapYear = isLeapYear; exports.isNegative = isNegative; exports.isNumber = isNumber; exports.isObject = isObject; exports.isOdd = isOdd; exports.isPalindrome = isPalindrome; exports.isPositive = isPositive; exports.isPrime = isPrime; exports.isString = isString; exports.isZero = isZero; exports.sortByKey = sortByKey; exports.toCamelCase = toCamelCase; exports.toKebabCase = toKebabCase; exports.toPascalCase = toPascalCase; exports.toSnakeCase = toSnakeCase; exports.toTitleCase = toTitleCase; exports.unique = unique;
 //# sourceMappingURL=index.js.map

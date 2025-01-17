@@ -1,6 +1,6 @@
 {
     "name": "@c3th/playground-toolkit",
-    "version": "1.0.11",
+    "version": "1.0.13",
     "description": "Playgrount toolkit to support portfolio testing application and website",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

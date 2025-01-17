@@ -46,6 +46,4 @@ declare const celciusToFahrenheit: (celsius: number) => number;
 declare const fahrenheitToCelcius: (fahrenheit: number) => number;
 declare const arrayToObj: (arr: any[], key: string) => any;
 
-declare const Test: () => Promise<void>;
-
-export { Test, arrayToObj, capitalizeWords, celciusToFahrenheit, deepClone, fahrenheitToCelcius, flattenArray, generateUUID, getRandomColor, getRandomNumber, imagesService, isEmptyObject, isEven, isLeapYear, isNegative, isNumber, isObject, isOdd, isPalindrome, isPositive, isPrime, isString, isZero, sortByKey, toCamelCase, toKebabCase, toPascalCase, toSnakeCase, toTitleCase, unique };
+export { type ImageItem, type ImagesService, type ImagesServiceConfiguration, arrayToObj, capitalizeWords, celciusToFahrenheit, deepClone, fahrenheitToCelcius, flattenArray, generateUUID, getRandomColor, getRandomNumber, imagesService, isEmptyObject, isEven, isLeapYear, isNegative, isNumber, isObject, isOdd, isPalindrome, isPositive, isPrime, isString, isZero, sortByKey, toCamelCase, toKebabCase, toPascalCase, toSnakeCase, toTitleCase, unique };

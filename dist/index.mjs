@@ -14,26 +14,6 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
-var __async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
 
 // src/loremPicsum/imagesService.ts
 var defaultConfig = {
@@ -147,17 +127,7 @@ var arrayToObj = (arr, key) => {
     return acc;
   }, {});
 };
-
-// src/index.ts
-console.log("Initialized the library");
-var Test = () => __async(void 0, null, function* () {
-  console.log("Lorem Picsum service configuration", imagesService.config);
-  console.log("utils.getRandomNumber", getRandomNumber(1, 10));
-  console.log("utils.getRandomColor", getRandomColor());
-});
-Test();
 export {
-  Test,
   arrayToObj,
   capitalizeWords,
   celciusToFahrenheit,
